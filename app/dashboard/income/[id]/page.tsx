@@ -60,7 +60,7 @@ export default function EditIncomePage() {
         throw new Error("Failed to update income")
       }
 
-      router.push("/income")
+      router.push("/dashboard/income")
     } catch (err) {
       setError(err instanceof Error ? err.message : "An error occurred")
     } finally {
@@ -71,12 +71,11 @@ export default function EditIncomePage() {
   return (
     <ProtectedRoute>
       <main className="min-h-screen bg-background">
-        <DashboardHeader />
 
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-3xl font-bold">Edit Income</h1>
-            <Link href="/income" className="btn-secondary px-6 py-3">
+            <Link href="/dashboard/income" className="btn-secondary px-6 py-3">
               Back to Income
             </Link>
           </div>
