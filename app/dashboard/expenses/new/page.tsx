@@ -43,7 +43,6 @@ export default function NewExpensePage() {
   return (
     <ProtectedRoute>
       <main className="min-h-screen bg-background">
-        <DashboardHeader />
 
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex justify-between items-center mb-8">
